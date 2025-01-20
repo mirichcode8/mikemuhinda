@@ -1,38 +1,153 @@
 .App {
   text-align: center;
 }
+/* 
+.post{
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px goldenrod;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.postusername{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.postmessage{
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+.posttime{
+color: green;
+  margin: 0;
+font-size: 0.8rem;} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.newpost-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #007bff;
+  outline: none;
 }
+
+.textarea-field {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.posts {
+  margin-top: 20px;
+}
+
+.no-posts {
+  text-align: center;
+  color: #888;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.post-username {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.post-message {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.post-time {
+  font-size: 12px;
+  color: #888;
+}
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+
